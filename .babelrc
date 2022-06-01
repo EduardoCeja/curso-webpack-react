@@ -1,0 +1,6 @@
+{
+    "presets": [
+        "@babel/preset-env",//Compila cualquier version de JavaScript 
+        "@babel/preset-react"//Nos ayuda a la sintaxis de React 
+    ]
+}
