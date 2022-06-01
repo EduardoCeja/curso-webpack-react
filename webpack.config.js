@@ -1,10 +1,9 @@
-const { resolve } = require('path');
 const path = require('path');
 //Se añade este recurso del plugin de HTML
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //Se añade este recurso del plugin de CSS
 const MiniCssExtracPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require("mini-minimizer-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
@@ -20,7 +19,7 @@ module.exports = {
         path: path.resolve(__dirname,"dist"),
         //filname le pone el nombre del archivo final 
         filename: 'bundle.js',
-        publicPath:"/",
+        publicPath:"./",
     },
     resolve:{
         //Aqui ponemos las extensiones que tendremos en nuestro proyecto para webpack los lea 
